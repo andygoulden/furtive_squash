@@ -1,0 +1,12 @@
+-Isrc/app
+-Isrc/lib
+-Isrc/platform/stm32f756_nucleo
+-Ithird_party/CMSIS_5/CMSIS/Core/Include
+-Ithird_party/cmsis-device-f7/Include
+-Ithird_party/FreeRTOS-Kernel/include
+-Ithird_party/FreeRTOS-Kernel/portable/GCC/ARM_CM7/r0p1
+-Ithird_party/stm32f7xx_hal_driver/Inc
+-Ithird_party/sx126x_driver/src
+-DSTM32F756xx
+-DCLANGD_FIXES
+-DUART_PRINT=1

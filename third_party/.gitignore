@@ -1,0 +1,8 @@
+build_stm32f7_hal_debug/
+build_stm32f7_hal_release/
+build_freertos_debug/
+build_freertos_release/
+build_cmsis_f7_debug/
+build_cmsis_f7_release/
+build_sx126x_debug/
+build_sx126x_release/

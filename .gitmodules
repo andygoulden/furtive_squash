@@ -1,0 +1,15 @@
+[submodule "third_party/stm32f7xx_hal_driver"]
+	path = third_party/stm32f7xx_hal_driver
+	url = https://github.com/STMicroelectronics/stm32f7xx_hal_driver
+[submodule "third_party/CMSIS_5"]
+	path = third_party/CMSIS_5
+	url = https://github.com/ARM-software/CMSIS_5.git
+[submodule "third_party/FreeRTOS-Kernel"]
+	path = third_party/FreeRTOS-Kernel
+	url = https://github.com/FreeRTOS/FreeRTOS-Kernel.git
+[submodule "third_party/cmsis-device-f7"]
+	path = third_party/cmsis-device-f7
+	url = https://github.com/STMicroelectronics/cmsis-device-f7.git
+[submodule "third_party/sx126x_driver"]
+	path = third_party/sx126x_driver
+	url = https://github.com/Lora-net/sx126x_driver.git
