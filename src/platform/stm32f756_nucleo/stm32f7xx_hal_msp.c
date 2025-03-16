@@ -119,28 +119,28 @@ void HAL_SPI_MspDeInit(SPI_HandleTypeDef* hspi)
 
 void HAL_UART_MspInit(UART_HandleTypeDef* huart)
 {
-  GPIO_InitTypeDef GPIO_InitStruct = {0};
-  RCC_PeriphCLKInitTypeDef PeriphClkInitStruct = {0};
-  if(huart->Instance==USART3)
-  {
-    PeriphClkInitStruct.PeriphClockSelection = RCC_PERIPHCLK_USART3;
-    PeriphClkInitStruct.Usart3ClockSelection = RCC_USART3CLKSOURCE_PCLK1;
-    if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInitStruct) != HAL_OK)
-    {
-      while(1);
-    }
+  // GPIO_InitTypeDef GPIO_InitStruct = {0};
+  // RCC_PeriphCLKInitTypeDef PeriphClkInitStruct = {0};
+  // if(huart->Instance==USART3)
+  // {
+    // PeriphClkInitStruct.PeriphClockSelection = RCC_PERIPHCLK_USART3;
+    // PeriphClkInitStruct.Usart3ClockSelection = RCC_USART3CLKSOURCE_PCLK1;
+    // if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInitStruct) != HAL_OK)
+    // {
+    //   while(1);
+    // }
 
-    __HAL_RCC_USART3_CLK_ENABLE();
+    // __HAL_RCC_USART3_CLK_ENABLE();
 
-    __HAL_RCC_GPIOD_CLK_ENABLE();
+    // __HAL_RCC_GPIOD_CLK_ENABLE();
 
-    GPIO_InitStruct.Pin = STLK_RX_Pin|STLK_TX_Pin;
-    GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
-    GPIO_InitStruct.Pull = GPIO_NOPULL;
-    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
-    GPIO_InitStruct.Alternate = GPIO_AF7_USART3;
-    HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
-  }
+    // GPIO_InitStruct.Pin = STLK_RX_Pin|STLK_TX_Pin;
+    // GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+    // GPIO_InitStruct.Pull = GPIO_NOPULL;
+    // GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+    // GPIO_InitStruct.Alternate = GPIO_AF7_USART3;
+    // HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
+  // }
 }
 
 void HAL_UART_MspDeInit(UART_HandleTypeDef* huart)

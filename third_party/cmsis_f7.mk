@@ -13,7 +13,7 @@ PROJECT_ROOT:=$(realpath ../)
 
 include $(PROJECT_ROOT)/scripts/include.mk
 
-C_FLAGS+= -DUSE_HAL_DRIVER -DSTM32F756xx
+C_FLAGS+= -DSTM32F756xx
 
 THIRD_PARTY_PATH:=$(PROJECT_ROOT)/third_party
 CMSIS_F7_PATH:=$(THIRD_PARTY_PATH)/cmsis-device-f7

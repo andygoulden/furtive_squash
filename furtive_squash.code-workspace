@@ -8,6 +8,14 @@
 		"cSpell.words": [
 			"CMSIS",
 			"GPIO",
+			"gpioa",
+			"gpiob",
+			"gpioc",
+			"gpiod",
+			"gpioe",
+			"gpiof",
+			"gpiog",
+			"gpioh",
 			"linkerscript",
 			"Nucleo"
 		]

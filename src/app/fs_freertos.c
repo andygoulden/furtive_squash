@@ -5,6 +5,7 @@
 #include "FreeRTOS.h"
 #include "board.h"
 #include "task.h"
+#include "stm32f7xx_ll_gpio.h"
 
 
 static bool _rtosInitialised = false;
@@ -42,9 +43,12 @@ void start_freertos()
 
   if (systemTaskHandle != NULL)
   {
-    HAL_GPIO_TogglePin(GPIOB, LD1_Pin);
-    HAL_GPIO_TogglePin(GPIOB, LD2_Pin);
-    HAL_GPIO_TogglePin(GPIOB, LD3_Pin);
+    LL_GPIO_TogglePin(GPIOB, LD1_Pin);
+    LL_GPIO_TogglePin(GPIOB, LD2_Pin);
+    LL_GPIO_TogglePin(GPIOB, LD3_Pin);
+    // HAL_GPIO_TogglePin(GPIOB, LD1_Pin);
+    // HAL_GPIO_TogglePin(GPIOB, LD2_Pin);
+    // HAL_GPIO_TogglePin(GPIOB, LD3_Pin);
   }
 
   _rtosInitialised = true;

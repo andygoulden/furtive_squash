@@ -7,7 +7,7 @@
 
 #include "stm32f7xx_hal.h" // IWYU pragma: export
 
-extern UART_HandleTypeDef huart3;
+// extern UART_HandleTypeDef huart3;
 
 void uart_init(void);
 uint32_t uart_write(uint8_t *data, uint32_t len);

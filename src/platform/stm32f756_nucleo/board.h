@@ -13,6 +13,8 @@ extern "C" {
 #define MCO_GPIO_Port GPIOH
 #define LD1_Pin GPIO_PIN_0
 #define LD1_GPIO_Port GPIOB
+#define LD2_Pin GPIO_PIN_7
+#define LD2_GPIO_Port GPIOB
 #define LD3_Pin GPIO_PIN_14
 #define LD3_GPIO_Port GPIOB
 #define STLK_RX_Pin GPIO_PIN_8
@@ -29,8 +31,6 @@ extern "C" {
 #define TCK_GPIO_Port GPIOA
 #define SW0_Pin GPIO_PIN_3
 #define SW0_GPIO_Port GPIOB
-#define LD2_Pin GPIO_PIN_7
-#define LD2_GPIO_Port GPIOB
 
 // See `doc/ADR.md:Pin mapping`
 #define SX1262_SCK_Port  GPIOA

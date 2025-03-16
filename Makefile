@@ -8,16 +8,18 @@ furtive_squash:
 	@make -C third_party -f sx126x.mk
 	@make -C src/app -f furtive_squash.mk
 
+# Just delete application build artefacts
 .PHONY: clean
 clean:
 	@make -C src/app -f furtive_squash.mk clean
 
+# Delete application and third-party build artefacts
 .PHONY: clean_all
 clean_all:
 	@make -C third_party -f stm32f7_hal.mk clean
 	@make -C third_party -f freertos.mk clean
 	@make -C third_party -f cmsis_f7.mk clean
-	@make -C third_party -f sx126x.mk
+	@make -C third_party -f sx126x.mk clean
 	@make -C src/app -f furtive_squash.mk clean
 
 .PHONY: flash

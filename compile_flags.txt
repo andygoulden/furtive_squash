@@ -8,5 +8,7 @@
 -Ithird_party/stm32f7xx_hal_driver/Inc
 -Ithird_party/sx126x_driver/src
 -DSTM32F756xx
+-DUSE_FULL_LL_DRIVER
+-D__Vendor_SysTickConfig=0
 -DCLANGD_FIXES
 -DUART_PRINT=1
