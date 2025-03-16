@@ -4,9 +4,6 @@
 
 #include "board.h" // IWYU pragma: export
 #include "print_functions/print_functions.h"
-// #include "stm32f7xx_ll_tim.h"
-
-extern TIM_HandleTypeDef htim1;
 
 void NMI_Handler(void)
 {
@@ -50,9 +47,4 @@ void UsageFault_Handler(void)
 
 void DebugMon_Handler(void)
 {
-}
-
-void TIM1_UP_TIM10_IRQHandler(void)
-{
-  HAL_TIM_IRQHandler(&htim1);
 }

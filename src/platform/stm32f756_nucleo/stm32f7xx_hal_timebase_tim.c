@@ -7,6 +7,9 @@ TIM_HandleTypeDef        htim1;
 
 HAL_StatusTypeDef HAL_InitTick(uint32_t TickPriority)
 {
+
+  return HAL_OK;
+
   RCC_ClkInitTypeDef    clkconfig;
   uint32_t              uwTimclock = 0U;
 

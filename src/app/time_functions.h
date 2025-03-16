@@ -4,5 +4,8 @@
 #include <stdint.h>
 
 uint32_t tick_init(void);
+uint32_t get_tick(void);
+void cpu_delay(uint32_t duration_ms);
+void system_clock_config(void);
 
 #endif // __TIME_FUNCTIONS_H
