@@ -34,10 +34,15 @@ OPT = -O2
 BUILD_DIR:=$(BUILD_DIR_RELEASE)
 endif
 
+# Select between full HAL functions or low-level (LL) versions of hardware abstraction functions
+FULL_HAL?=0
+ifeq ($(FULL_HAL),1)
 STM32_HAL_C_SOURCES_ALL:=$(wildcard $(STM32_HAL_REPO_PATH)/Src/*.c)
 STM32_HAL_TEMPLATES:=$(wildcard $(STM32_HAL_REPO_PATH)/Src/*_template.c)
 STM32_HAL_C_SOURCES:=$(filter-out $(STM32_HAL_TEMPLATES),$(STM32_HAL_C_SOURCES_ALL))
-# STM32_HAL_C_SOURCES:=$(wildcard $(STM32_HAL_REPO_PATH)/Src/stm32f7xx_ll_*.c)
+else
+STM32_HAL_C_SOURCES:=$(wildcard $(STM32_HAL_REPO_PATH)/Src/stm32f7xx_ll_*.c)
+endif
 
 STM32_HAL_OBJECTS:=$(addprefix $(BUILD_DIR)/,$(notdir $(STM32_HAL_C_SOURCES:.c=.o)))
 vpath %.c $(sort $(dir $(STM32_HAL_C_SOURCES)))

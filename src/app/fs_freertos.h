@@ -3,7 +3,11 @@
 
 #include <stdbool.h>
 
-// Task declarations
+/*
+ * Task declarations
+ *
+ * Put task declarations here rather than the headers of the files where the task is implemented.
+ */
 void systemTask(void* parameters);
 
 bool rtosStarted(void);

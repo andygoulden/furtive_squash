@@ -46,9 +46,6 @@ void start_freertos()
     LL_GPIO_TogglePin(GPIOB, LD1_Pin);
     LL_GPIO_TogglePin(GPIOB, LD2_Pin);
     LL_GPIO_TogglePin(GPIOB, LD3_Pin);
-    // HAL_GPIO_TogglePin(GPIOB, LD1_Pin);
-    // HAL_GPIO_TogglePin(GPIOB, LD2_Pin);
-    // HAL_GPIO_TogglePin(GPIOB, LD3_Pin);
   }
 
   _rtosInitialised = true;

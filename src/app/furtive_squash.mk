@@ -80,7 +80,6 @@ C_FLAGS += \
 OBJECTS:= $(C_OBJECTS)
 
 C_FLAGS+= -DUSE_FULL_LL_DRIVER -DSTM32F756xx
-C_FLAGS+= -DUSE_HAL_DRIVER
 
 # Receive or transmit mode
 #

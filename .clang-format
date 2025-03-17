@@ -1,1 +1,3 @@
 ColumnLimit: 200
+AllowShortLoopsOnASingleLine: true
+AllowShortBlocksOnASingleLine: true
